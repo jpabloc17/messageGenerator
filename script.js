@@ -9,3 +9,6 @@ const collectiveWisdom = {
   ],
   advice: ["go out and eat", "not read this", "play more", "trust no one"],
 };
+function generateRandomNumber(index) {
+  return Math.floor(Math.random() * index);
+}
