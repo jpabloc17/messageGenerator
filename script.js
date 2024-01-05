@@ -12,3 +12,7 @@ const collectiveWisdom = {
 function generateRandomNumber(index) {
   return Math.floor(Math.random() * index);
 }
+
+for (const prop in collectiveWisdom) {
+  let randomIndex = generateRandomNumber(collectiveWisdom[prop].length);
+}
