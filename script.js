@@ -15,4 +15,15 @@ function generateRandomNumber(index) {
 
 for (const prop in collectiveWisdom) {
   let randomIndex = generateRandomNumber(collectiveWisdom[prop].length);
+  switch (prop) {
+    case "signInfo":
+      console.log(`Your sing is ${collectiveWisdom[prop][randomIndex]}`);
+      break;
+    case "fortuneOutput":
+      console.log(`You are having ${collectiveWisdom[prop][randomIndex]}`);
+      break;
+    case "advice":
+      console.log(`You should: "${collectiveWisdom[prop][randomIndex]}"`);
+      break;
+  }
 }
