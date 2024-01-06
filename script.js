@@ -13,6 +13,16 @@ function generateRandomNumber(index) {
   return Math.floor(Math.random() * index);
 }
 
+function getLuckyNumber() {
+  let number = "";
+  console.log(number);
+  do {
+    let digit = generateRandomNumber(10);
+    number = number + digit;
+  } while (number.length < 4);
+  return number;
+}
+
 for (const prop in collectiveWisdom) {
   let randomIndex = generateRandomNumber(collectiveWisdom[prop].length);
   switch (prop) {
