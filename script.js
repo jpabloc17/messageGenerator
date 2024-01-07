@@ -245,3 +245,10 @@ let personalWisdom = [
   "0",
   "\n",
 ];
+
+function formatWisdom(wisdom) {
+  const formatted = personalWisdom.join("");
+  console.log(formatted);
+}
+
+formatWisdom(personalWisdom);
